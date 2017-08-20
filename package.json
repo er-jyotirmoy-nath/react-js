@@ -1,0 +1,33 @@
+{
+  "name": "react-tut",
+  "version": "1.0.0",
+  "description": "Some React Baisc",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/er-jyotirmoy-nath/react-js.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src\\ --inline --hot",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Jyotirmoy Nath",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
